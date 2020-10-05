@@ -1,4 +1,5 @@
-import { LightningElement, api } from 'lwc';
+import { api } from 'lwc';
+import LightningElementSLDS from 'util/lightningElementSLDS';
 
 const greetings = [
     'Hello',
@@ -20,7 +21,7 @@ const SPEED_CLASS_MAP = {
 };
 const DEFAULT_SPEED = 'medium';
 
-export default class Greeting extends LightningElement {
+export default class Greeting extends LightningElementSLDS {
     animationSpeed = DEFAULT_SPEED;
     index = 0;
     isAnimating = true;
